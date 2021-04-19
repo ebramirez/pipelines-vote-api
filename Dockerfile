@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as builder
+FROM  default-route-openshift-image-registry.apps.na46-stage2.dev.nextcle.com:5000/openshift/golang:latest as builder
 
 WORKDIR /build
 ADD . /build/
